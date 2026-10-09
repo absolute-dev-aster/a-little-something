@@ -123,11 +123,11 @@ const CONFIG = {
     { src: "photos/photo4.jpg", caption: "That smile" }
   ],
   message: [
-    "Happy birthday, my love. I wanted to give you something that feels a bit more like me than a card.",
+    "Happy birthday, my little stressball. I wanted to give you something that feels a bit better than a card... a webpage ;)",
     "Thank you for being the person who makes ordinary days better, who laughs at my terrible jokes, and who makes this place feel like home.",
-    "I hope your day off today is full of everything you love, and that this year is kind to you. I'm so lucky to get to celebrate you."
+    "I hope your day off today is full of ACTUAL chill time for once, and that this year is kind to you. I'm so lucky to get to celebrate you."
   ],
-  resultMsg: "Surprise: there were never any wrong answers. Because you're always right - and good boyfriends should just shut up... your words."
+  resultMsg: "Surprise: there were never any wrong answers. Because you're always right - and good boyfriends should just shut up... (your words)"
 };
 
 const quiz = [
@@ -136,19 +136,25 @@ const quiz = [
       { t: "Aish is a Comedic Genius", k: "mostwrong" },
       { t: "A lot", k: "meh" },
       { t: "I'm not funny, Aaron is actually funnier", k: "right" },
-      { t: "Only on weekends", k: "meh" } ] },
+      { t: "So Damn Funny", k: "meh" } ] },
   { q: "What's my favourite thing to do?",
     opts: [
       { t: "Do Chores", k: "right" },
-      { t: "Get my feet rubbed", k: "mostwrong" },
-      { t: "Eat Bournvita and Nutella", k: "meh" },
+      { t: "Get my feet rubbed", k: "meh" },
+      { t: "Eat Bournvita and Nutella at the same time!", k: "mostwrong" },
       { t: "Win every argument", k: "meh" } ] },
   { q: "Who is the most important person in my life?",
     opts: [
       { t: "Aaron", k: "right" },
       { t: "Twitch", k: "right" },
-      { t: "That guy named Aaron", k: "right" },
-      { t: "Me", k: "mostwrong" } ] },
+      { t: "Your Friendly Neighbourhood Whiteman", k: "right" },
+      { t: "Mari", k: "mostwrong" } ] },
+  { q: "Will I still love you next year, and the year after?",
+    opts: [
+      { t: "Every year, forever", k: "right" },
+      { t: "No, I'm bored already", k: "mostwrong" },
+      { t: "Ask me after dinner", k: "meh" },
+      { t: "Terms and conditions apply", k: "meh" } ] }
   { q: "Will I still love you next year, and the year after?",
     opts: [
       { t: "Every year, forever", k: "right" },
@@ -158,13 +164,13 @@ const quiz = [
 ];
 
 const feedback = {
-  right: [
-    "❌ Wrong!",
-    "That's the obviously correct answer, which makes it wrong. But you're right. 💕"
-  ],
   mostwrong: [
+    "❌ Wrong!",
+    "That's obviously the correct answer, which makes it wrong. But you're right. 💕"
+  ],
+  right: [
     "✅ Correct!",
-    "That was the most wrong answer on the page, so naturally it's the right one. You are right. 💕"
+    "That was the most wrong answer on the page, but you picked it... so it's the right one. You are right. 💕"
   ],
   meh: [
     "❌ Wrong... ✅ and right!",
